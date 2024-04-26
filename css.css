@@ -1,0 +1,61 @@
+/* Estilo para el encabezado */
+header {
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between;
+    align-items: center; /* Alinear verticalmente */
+    padding: 10px;
+}
+
+/* Estilo para la barra de navegación */
+nav ul {
+    list-style-type: none; /* Quitar viñetas de la lista */
+    margin: 0; /* Eliminar el margen predeterminado */
+    padding: 0; /* Eliminar el relleno predeterminado */
+}
+
+nav ul li {
+    display: inline; /* Mostrar elementos en línea */
+    margin-left: 10px; /* Espacio entre elementos */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Eliminar el margen izquierdo del primer elemento */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: #000000; /* Color del texto */
+    font-size: 18px;
+}
+header img {
+    max-width: 80px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+}
+.izquierda {
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Alinear verticalmente */
+}
+/* Estilo para las imágenes en miniatura */
+.miniatura {
+    width: 150px; /* Ancho deseado para las miniaturas */
+    height: 150px; /* Altura deseada para las miniaturas */
+    object-fit: cover; /* Ajustar la imagen dentro del contenedor sin distorsionarla */
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Estilo para la imagen en grande */
+.imagen-grande {
+    width: 80%; /* Ancho deseado para la imagen en grande */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+    max-width: 800px; /* Ancho máximo para la imagen en grande */
+    max-height: 80%; /* Altura máxima para la imagen en grande */
+    object-fit: contain; /* Ajustar la imagen dentro del contenedor sin recortarla */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    cursor: pointer;
+}
+
